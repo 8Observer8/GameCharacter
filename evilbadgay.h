@@ -2,6 +2,7 @@
 #define EVILBADGAY_H
 
 #include "gamecharacter.h"
+#include "functions_for_healthcalc.h"
 
 namespace GameStuff {
 
