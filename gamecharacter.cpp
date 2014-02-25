@@ -1,6 +1,8 @@
 #include "gamecharacter.h"
 #include <QDebug>
 
+namespace GameStuff {
+
 GameCharacter::GameCharacter()
 {
 }
@@ -27,4 +29,6 @@ int GameCharacter::doHealthValue() const
      * жизненной силы персонажа
      */
     return 0;
+}
+
 }

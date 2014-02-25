@@ -17,8 +17,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     gamecharacter.cpp \
-    player.cpp
+    player.cpp \
+    evilbadgay.cpp \
+    functions_for_healthcalc.cpp
 
 HEADERS += \
     gamecharacter.h \
-    player.h
+    player.h \
+    evilbadgay.h \
+    functions_for_healthcalc.h

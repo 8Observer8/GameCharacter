@@ -1,18 +1,29 @@
 #ifndef GAMECHARACTER_H
 #define GAMECHARACTER_H
 
+#include "functions_for_healthcalc.h"
+
+namespace GameStuff {
+
 class GameCharacter
 {
 public:
     GameCharacter();
 
-    int healthValue() const; /* производные классы не переопределяют
-                              * эту функцию, см. правило 36
-                              */
+    typedef int (*HealthCalcFunc)(const GameCharacter&);
+
+    explicit GameCharacter(HealthCalcFunc hcf = defaultHealthCalc)
+        : healthFunc(hcf)
+    {}
+
+    int healthValue() const {
+        return healthFunc(*this);
+    }
+
 private:
-    virtual int doHealthValue() const; /* производные классы могут
-                                        * переопределить эту функцию
-                                        */
+    HealthCalcFunc healthFunc;
 };
+
+}
 
 #endif // GAMECHARACTER_H

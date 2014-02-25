@@ -3,6 +3,8 @@
 
 #include "gamecharacter.h"
 
+namespace GameStuff {
+
 class Player : public GameCharacter
 {
 public:
@@ -11,5 +13,7 @@ public:
 private:
     virtual int doHealthValue() const;
 };
+
+}
 
 #endif // PLAYER_H

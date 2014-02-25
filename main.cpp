@@ -1,19 +1,15 @@
 #include <QCoreApplication>
-#include "gamecharacter.h"
-#include "player.h"
+#include "evilbadgay.h"
 #include <QDebug>
+#include "functions_for_healthcalc.h"
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    GameCharacter gc;
-    int healthValue = gc.healthValue();
-
-    qDebug() << "";
-
-    Player player;
-    healthValue = player.healthValue();
+    // однотипные персонажи с разным поведением относительно здоровья
+    GameStuff::EvilBadGay ebg1(loseHealthQuickly);
+    GameStuff::EvilBadGay ebg2(loseHealthSlowly);
 
     return a.exec();
 }
