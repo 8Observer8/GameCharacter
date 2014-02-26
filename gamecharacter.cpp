@@ -7,6 +7,7 @@ GameCharacter::GameCharacter()
 {
 }
 
+/*
 int GameCharacter::healthValue()  const
 {
     // выполнить предварительные действия
@@ -22,13 +23,15 @@ int GameCharacter::healthValue()  const
 
     return retVal;
 }
+*/
 
-int GameCharacter::doHealthValue() const
-{
-    /* алгоритм по умолчанию для вычисления
-     * жизненной силы персонажа
-     */
-    return 0;
-}
+//int GameCharacter::doHealthValue() const
+//{
+//    /* алгоритм по умолчанию для вычисления
+//     * жизненной силы персонажа
+//     */
+//    return 0;
+//}
+
 
 }

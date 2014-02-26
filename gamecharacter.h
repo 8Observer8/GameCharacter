@@ -12,7 +12,7 @@ public:
 
     typedef int (*HealthCalcFunc)(const GameCharacter&);
 
-    explicit GameCharacter(HealthCalcFunc hcf = defaultHealthCalc)
+    explicit GameCharacter(HealthCalcFunc hcf = GameStuff::defaultHealthCalc)
         : healthFunc(hcf)
     {}
 

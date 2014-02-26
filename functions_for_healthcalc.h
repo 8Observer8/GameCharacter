@@ -5,6 +5,8 @@
 
 namespace GameStuff {
 
+class GameCharacter;
+
 // функция алгоритма по умолчанию для вычисления жизненной силы персонажа
 int defaultHealthCalc(const GameCharacter& gc);
 

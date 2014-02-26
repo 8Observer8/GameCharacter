@@ -1,18 +1,18 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "gamecharacter.h"
+//#include "gamecharacter.h"
 
 namespace GameStuff {
 
-class Player : public GameCharacter
-{
-public:
-    Player();
+//class Player : public GameCharacter
+//{
+//public:
+//    Player();
 
-private:
-    virtual int doHealthValue() const;
-};
+//private:
+//    virtual int doHealthValue() const;
+//};
 
 }
 
